@@ -6,7 +6,7 @@ RUN npm ci
 COPY . .
 RUN npm run build
 
-FROM node:22 as runtime
+FROM node:22 AS runtime
 
 WORKDIR /app
 COPY package*.json ./
